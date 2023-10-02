@@ -1,0 +1,149 @@
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeInLeft 1s ease;
+}
+
+.option {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #0056B3;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease;
+}
+
+#next-button {
+    display: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+}
+
+#next-button:hover {
+    background-color: #1E7E34;
+}
+
+#restart-button {
+    display: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+}
+
+#restart-button:hover {
+    background-color: #FFA000;
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease;
+}
+
+#timer {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

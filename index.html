@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiGG Gaming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+      <img src="indilogo.png" alt="IndiGG Logo" class="logo" align="left">
+        <h1 style="color: rgb(168, 43, 226);">IndiGG Gaming Quiz</h1>
+        <br>
+        <br>        
+        <div class="question">
+            <p id="question-text"></p>
+        </div>
+        <div class="answers">
+            <button class="option" onclick="checkAnswer(0)">Option 1</button>
+            <button class="option" onclick="checkAnswer(1)">Option 2</button>
+            <button class="option" onclick="checkAnswer(2)">Option 3</button>
+            <button class="option" onclick="checkAnswer(3)">Option 4</button>
+            <br>
+            <br>
+        </div>
+        <div id="result"></div>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+        <button id="restart-button" onclick="restartQuiz()">Restart</button>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time Left: 10</div>
+    </div>
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="incorrect-sound" src="incorrect.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
