@@ -12,10 +12,10 @@ Getting Started
 Follow these steps to get the IndiGG Gaming Quiz up and running:
 
 1. Clone the repository to your local machine:
-  git clone https://github.com/your-username/indigg-gaming-quiz.git
+  git clone git@github.com:laxmen18/Indi-Quiz.git
 
 2. Open the project folder:
-  cd indigg-gaming-quiz
+  cd Indi-Quiz
 
 3. Open the index.html file in your web browser to start the quiz.
 
